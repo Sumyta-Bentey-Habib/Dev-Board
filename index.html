@@ -21,7 +21,7 @@
     <div class="flex items-center flex-none gap-4">
       <div class="flex items-center gap-1 btn ">
         <img src="./assets/checkbox.png" alt="Checkbox" class="w-8 h-8">
-        <span class="px-2 py-1 text-sm font-bold rounded-full">23</span>
+        <span class="px-2 py-1 text-sm font-bold rounded-full" id="cheak-box">23</span>
       </div>
 
       <div class="btn btn-ghost btn-circle">
@@ -39,23 +39,17 @@
           <img src="./assets/checkbox.png" alt="">
           <div>
             <h3>Total Task</h3>
-            <h4>6</h4>
+            <h4 id="task-number">6</h4>
           </div>
         </div>
-         <div class="bg-color">
-          <div class="flex items-center justify-center gap-2 p-10 rounded-lg shadow-lg ">
+        <div class="bg-color" id="blog-post">
+          <div class="flex items-center justify-center gap-2 p-10 rounded-lg shadow-lg cursor-pointer ">
             <img src="./assets/board.png" alt="">
             <div>
               <h3>Discover Something New Today!</h3>
             </div>
           </div>
-         </div>
-        <!-- <div class="flex items-center justify-center gap-2 p-10 rounded-lg shadow-lg bgcolor">
-          <img src="./assets/board.png" alt="">
-          <div>
-            <h3>Discover Something New Today!</h3>
-          </div>
-        </div> -->
+        </div>
 
         <div class="flex items-center justify-center gap-2 p-10 bg-white rounded-lg shadow-lg">
           <img src="./assets/calender.png" alt="">
@@ -72,14 +66,15 @@
           <div class="card-body">
             <h2 class="p-2 bg-white rounded-md card-title border-amber-50">Shop Ease</h2>
             <h3 class="text-xl text-bold">Fix Mobile Button Issue</h3>
-            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part,
+              and inside body there are title and actions parts</p>
             <div>
               <div class="flex justify-between card-actions">
                 <div>
                   <h3>Deadline</h3>
                   <p>21 March, 2025</p>
                 </div>
-                
+
                 <button class="btn bg-primary" id="complete-btn-1">Completed</button>
               </div>
             </div>
@@ -91,7 +86,8 @@
           <div class="card-body">
             <h2 class="p-2 bg-white rounded-md card-title border-amber-50">Soft Pay</h2>
             <h3 class="text-xl text-bold">Add Pay Success Modal</h3>
-            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part,
+              and inside body there are title and actions parts</p>
             <div>
               <div class="flex justify-between card-actions">
                 <div>
@@ -109,7 +105,8 @@
           <div class="card-body">
             <h2 class="p-2 bg-white rounded-md card-title border-amber-50">Meta</h2>
             <h3 class="text-xl text-bold">Add new reaction</h3>
-            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part,
+              and inside body there are title and actions parts</p>
             <div>
               <div class="flex justify-between card-actions">
                 <div>
@@ -127,7 +124,8 @@
           <div class="card-body">
             <h2 class="p-2 bg-white rounded-md card-title border-amber-50">Programming Hero</h2>
             <h3 class="text-xl text-bold">Fix Video Loading issue</h3>
-            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part,
+              and inside body there are title and actions parts</p>
             <div>
               <div class="flex justify-between card-actions">
                 <div>
@@ -145,7 +143,8 @@
           <div class="card-body">
             <h2 class="p-2 bg-white rounded-md card-title border-amber-50">Google LLC</h2>
             <h3 class="text-xl text-bold">Integrate AI search</h3>
-            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part,
+              and inside body there are title and actions parts</p>
             <div>
               <div class="flex justify-between card-actions">
                 <div>
@@ -163,7 +162,8 @@
           <div class="card-body">
             <h2 class="p-2 bg-white rounded-md card-title border-amber-50">Polygon Tech</h2>
             <h3 class="text-xl text-bold">Review Ami Probashi Site</h3>
-            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+            <p class="p-2 text-gray-400 bg-white rounded-md border-amber-50">A card component has a figure, a body part,
+              and inside body there are title and actions parts</p>
             <div>
               <div class="flex justify-between card-actions">
                 <div>
@@ -188,7 +188,7 @@
             <img src="./assets/activity.png" alt="Logo" class="w-10 h-10">
             <a class="gap-0 text-xl btn btn-ghost">Activity Log</a>
           </div>
-          <button class="mx-4 mb-4 btn bg-primary">Clear History</button>
+          <button class="mx-4 mb-4 btn bg-primary" id="clear-history">Clear History</button>
         </div>
       </div>
     </div>
@@ -197,7 +197,9 @@
 
   <script src="./javascript/background.js"></script>
   <script src="./javascript/activity.js"></script>
-  
+  <script src="./javascript/decrement.js"></script>
+  <script src="./javascript/blog.js"></script>
+
 </body>
 
 </html>
