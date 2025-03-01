@@ -3,6 +3,13 @@
     border-radius: 8px;
 }
 
+hr {
+  border: none; 
+  border-top: 2px dashed black; 
+  margin: 20px 0;
+}
+
+
 .activity-log-container {
     padding: 10px; 
     background-color: #f9f9f9; 
