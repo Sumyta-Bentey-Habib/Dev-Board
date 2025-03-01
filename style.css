@@ -1,3 +1,5 @@
+
+
 .bg-color {
     background: linear-gradient(to right, rgba(49, 80, 234, 0.772), rgb(243, 235, 235));
     border-radius: 8px;
@@ -9,7 +11,10 @@ hr {
   margin: 20px 0;
 }
 
+#task-number{
+  font-weight: bold;
 
+}
 .activity-log-container {
     padding: 10px; 
     background-color: #f9f9f9; 
