@@ -16,7 +16,7 @@ function updateActivityLog(taskTitle) {
 
 function disableCompleteButton(button, taskTitle) {
   button.disabled = true;
-  alert(`You have completed the task: "${taskTitle}"`);
+  alert(`Board Updated Successfully`);
 }
 
 completeButtons.forEach((button) => {
