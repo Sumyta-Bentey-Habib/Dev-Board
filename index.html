@@ -12,7 +12,7 @@
 
 <body class="p-5">
   <!-- Nav Bar -->
-  <div class="navbar border-amber-50">
+  <div class="bg-white rounded-lg shadow-lg navbar border-amber-50">
     <div class="flex items-center flex-1 gap-0">
       <img src="./assets/logo.png" alt="Logo" class="w-10 h-10">
       <a class="gap-0 text-xl btn btn-ghost">Dev <span class="font-bold">Board</span></a>
@@ -31,10 +31,10 @@
   </div>
 
   <!-- Card section -->
-  <div class="flex space-x-10">
+  <div class="flex space-x-10 ">
     <!-- card div start -->
     <div class="flex-1 mt-10">
-      <section class="flex justify-between gap-2 p-5 mt-10">
+      <section class="flex justify-between gap-2 p-5 mt-10 bg-white rounded-lg shadow-lg">
         <div class="flex items-center justify-center gap-3 p-4 bg-white rounded-lg shadow-lg">
           <img src="./assets/checkbox.png" alt="">
           <div>
@@ -60,7 +60,7 @@
       </section>
 
       <!-- 6 card Layout -->
-      <section class="grid grid-cols-3 gap-4 p-5 mt-10">
+      <section class="grid grid-cols-3 gap-4 p-5 mt-10 bg-white rounded-lg shadow-lg">
         <!-- Card 1 -->
         <div class="w-full text-black bg-blue-200 card text-primary-content">
           <div class="card-body">
@@ -181,18 +181,16 @@
     <!-- card div end -->
 
     <!-- 2nd side start -->
-    <div class="flex-none w-96">
-      <div class="box-border flex flex-col h-full p-1 mt-10 border-2 shadow-lg">
-        <div class="flex flex-col h-full text-black card text-primary-content w-96">
-          <div class="flex items-center gap-3 p-4">
-            <img src="./assets/activity.png" alt="Logo">
-            <a class="gap-0 text-xl btn btn-ghost">Activity Log</a>
-          </div>
-          <button class="mx-4 mb-4 btn bg-primary"id="clear-history">Clear History</button>
+    <div class="box-border flex flex-col p-1 bg-white border-2 shadow-lg mt-9">
+      <div class="flex flex-col h-auto text-black bg-white card text-primary-content w-96">
+        <div class="flex items-center gap-3 p-4">
+          <img src="./assets/activity.png" alt="Logo">
+          <a class="gap-0 text-xl btn btn-ghost">Activity Log</a>
         </div>
       </div>
+      <button class="mx-4 mb-4 btn bg-primary" id="clear-history">Clear History</button>
+      <div class="p-4 overflow-y-auto activity-log-container"></div>
     </div>
-    <!-- 2nd side end -->
   </div>
 
   <script src="./javascript/background.js"></script>

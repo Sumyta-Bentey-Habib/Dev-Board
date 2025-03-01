@@ -1,24 +1,17 @@
 const completeButtons = document.querySelectorAll('.btn.bg-primary:not(#clear-history)'); 
-const activityLog = document.querySelector('.box-border'); 
+const activityLog = document.querySelector('.activity-log-container'); 
 const clearHistoryBtn = document.querySelector('#clear-history');
-const date = new Date();
 
 function updateActivityLog(taskTitle) {
-  const taskTime = date.toLocaleString();
+  const taskTime = new Date().toLocaleString();
   const logMessage = `You have completed the task: "${taskTitle}" on ${taskTime}`;
 
-  const logItem = document.createElement('li');
+
+  const logItem = document.createElement('div');
+  logItem.classList.add('log-item'); 
   logItem.textContent = logMessage;
 
-
-  let activityList = activityLog.querySelector('.activity-list');
-  if (!activityList) {
-    activityList = document.createElement('ul');
-    activityList.classList.add('activity-list');
-    activityLog.appendChild(activityList); 
-  }
-
-  activityList.appendChild(logItem); 
+  activityLog.prepend(logItem);
 }
 
 function disableCompleteButton(button, taskTitle) {
@@ -26,8 +19,8 @@ function disableCompleteButton(button, taskTitle) {
   alert(`You have completed the task: "${taskTitle}"`);
 }
 
-completeButtons.forEach((button, index) => {
-  const taskTitle = document.querySelectorAll('.card-title')[index].textContent;
+completeButtons.forEach((button) => {
+  const taskTitle = button.closest('.card').querySelector('.card-title').textContent;
 
   button.addEventListener('click', () => {
     disableCompleteButton(button, taskTitle);
@@ -36,9 +29,6 @@ completeButtons.forEach((button, index) => {
 });
 
 clearHistoryBtn.addEventListener('click', () => {
-  const activityList = activityLog.querySelector('.activity-list'); 
-  if (activityList) {
-    activityList.innerHTML = ''; 
-    alert('Activity history has been cleared.');
-  }
+  activityLog.innerHTML = ''; 
+  alert('Activity history has been cleared.');
 });
